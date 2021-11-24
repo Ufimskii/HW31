@@ -98,14 +98,14 @@ public class Radio {
         if (currentStation < maxStation) {
             currentStation ++;
         }
-        this.currentStation = minStation;
+        return currentStation;
     }
     //Уменьшение станции
     public int downStation() {
         if (currentStation > minStation) {
             currentStation --;
         }
-        this.currentStation = maxStation;
+        return currentStation;
     }
 
 
