@@ -21,10 +21,10 @@ class RadioTest {
     @Test
     public void shouldUpCurrentSatation() {
         Radio radio = new Radio();
-        assertEquals(8, radio.getCurrentStation());
-        radio.setCurrentStation(5);
-        assertEquals(5, radio.getCurrentStation());
-        radio.upStation();
+        radio.setMaxStation(9);
+        radio.setMinStation(0);
+        radio.setCurrentStation(7);
+        assertEquals(8, radio.upStation());
     }
 
 //    @Test
